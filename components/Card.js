@@ -1,29 +1,33 @@
 import { Fragment } from "react";
 import Image from "next/image";
-import foodie_1 from "../images/foodie_1.png";
 import style from "./Card.module.scss";
 import Language from "./UI/Language";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Card = (props) => {
   return (
     <Fragment>
       <div className={style.card_container}>
-        <h1 className={style.title}>{props.title}</h1>
         <div className={style.card_info}>
+          <h1 className={style.title}>{props.title}</h1>
           <p className={style.card_text}>{props.paragraph_one}</p>
           <p className={style.card_text}>{props.paragraph_two}</p>
           <div className={style.button_wrapper}>
-            <button>Git</button>
-            <button>Site</button>
+            <button>
+              <FontAwesomeIcon icon={faGitAlt} />
+            </button>
+            <button>
+              <FontAwesomeIcon icon={faGlobe} />
+            </button>
           </div>
         </div>
         <div>
           <div className={style.card_image}>
             <Image
-              src={foodie_1}
-              alt={foodie_1}
+              src={props.image_one}
+              alt={props.image_one}
               width="900"
               height="506"
             ></Image>
