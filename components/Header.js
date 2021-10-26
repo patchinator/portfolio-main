@@ -1,5 +1,7 @@
 import { Fragment } from "react";
 import style from "./Header.module.scss";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   return (
@@ -9,7 +11,9 @@ const Header = () => {
           <h1>Patrick Hoveman</h1>
           <h2>Junior Web Developer</h2>
           <div>
-            <button>arrow</button>
+            <button>
+              <FontAwesomeIcon icon={faArrowDown} />
+            </button>
           </div>
         </div>
       </section>
