@@ -3,12 +3,11 @@ import style from "./About.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import { useAnimation } from "framer-motion";
 
 const About = (props) => {
-  const variants = {
-    visible: { opactity: 1 },
-    hidden: { opactity: 0 },
-  };
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
 
   return (
     <section className={style.container}>
@@ -16,7 +15,8 @@ const About = (props) => {
         className={style.about_wrapper}
         initial="hidden"
         animate="visible"
-        variants={variants}
+        variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
+        transition={{ duration: 2 }}
       >
         <div className={style.title}>
           <h1>About</h1>
