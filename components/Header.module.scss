@@ -1,0 +1,42 @@
+$primary-color: rgb(116, 116, 116);
+$secondary-color: rgb(46, 46, 46);
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+
+  .details {
+    font-size: 3rem;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: whitesmoke;
+
+    h1,
+    h2 {
+      font-size: 72px;
+      background: -webkit-linear-gradient($primary-color, $secondary-color);
+      background-size: 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      margin: 0px;
+    }
+
+    button {
+      padding: 1rem;
+      border-radius: 100%;
+      border: none;
+      background: greenyellow;
+    }
+  }
+}
