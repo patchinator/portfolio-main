@@ -13,7 +13,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Card />
+      <Card
+        title="Foodie"
+        paragraph_one="A blog-like application for anyone to talk/share their experiences with food."
+        paragraph_two="This was the second time using Chakra UI. It's brilliant documentation and usability makes creating reactive components simple and scalable.
+
+        This was the first proper project using the Next.js framework. I found it's routing and server side rendering features extremely useful."
+      />
     </Fragment>
   );
 }

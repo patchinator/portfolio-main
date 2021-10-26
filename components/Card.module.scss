@@ -1,0 +1,53 @@
+$primary-color: rgb(116, 116, 116);
+$secondary-color: rgb(46, 46, 46);
+
+.card_container {
+  display: flex;
+  background: blanchedalmond;
+  margin: 4rem;
+
+  .title {
+    font-size: 3rem;
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+  }
+
+  .card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .card_text {
+      padding: 1rem;
+      font-size: 20px;
+    }
+  }
+
+  .card_image {
+    padding: 2rem;
+    width: 900px;
+  }
+}
+
+.languages_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -5rem;
+}
+
+.button_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

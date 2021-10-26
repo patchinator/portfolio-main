@@ -37,7 +37,7 @@ $green: rgb(177, 255, 60);
 
     button {
       background: $page;
-      padding: 1rem;
+      padding: 0.5rem;
       border-radius: 100%;
       border: none;
       display: flex;
@@ -45,6 +45,8 @@ $green: rgb(177, 255, 60);
       justify-content: center;
       font-size: 1.5rem;
       transition: 150ms ease-in;
+      width: 4rem;
+      height: 4rem;
 
       &:hover {
         background: $green;
