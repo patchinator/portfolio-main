@@ -22,7 +22,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <About profile={profile} description={"My profile Pic"} />
+      <About
+        profile={profile}
+        image_description="My profile Pic"
+        description_1="Creative and driven full stack developer with diverse skills, who
+         enjoys collaborative projects and working with others to make user experiences as
+          smooth as possible."
+        description_2="Long term goals are to become an effective and reliable software
+        developer. In my spare time I like to play games, guitar, and cook."
+      />
       <Card
         title="Foodie"
         paragraph_one="A blog-like application for anyone to talk/share their experiences
@@ -88,6 +96,7 @@ export default function Home() {
           "Javascript",
           "Ruby",
           "Ruby on Rails",
+          "Mapbox API",
           "Cloudinary",
           "PostreSQL",
           "Heroku",

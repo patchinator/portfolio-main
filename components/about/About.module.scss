@@ -2,63 +2,97 @@ $primary-color: rgb(116, 116, 116);
 $secondary-color: rgb(46, 46, 46);
 $green: rgb(177, 255, 60);
 
-.about_wrapper {
+.container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 
-  .title {
+  .about_wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    width: 50%;
 
-    h1 {
-      font-size: 4rem;
-      background: -webkit-linear-gradient($primary-color, $secondary-color);
-      background-size: 100%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -moz-text-fill-color: transparent;
-      text-align: center;
-    }
-  }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-  .contents {
-    display: flex;
-    justify-content: space-evenly;
-
-    .image {
-      overflow: hidden;
-      border-radius: 50%;
+      h1 {
+        font-size: 4rem;
+        background: -webkit-linear-gradient($primary-color, $secondary-color);
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        text-align: center;
+      }
     }
 
-    .info {
-      background: chocolate;
+    .contents {
+      display: flex;
+      justify-content: space-evenly;
 
-      .info_name {
-        font-size: 2rem;
+      .image {
+        overflow: hidden;
+        border-radius: 50%;
+        margin: 2rem;
       }
 
-      .info_description {
-        font-size: 20px;
-      }
+      .info {
+        flex: 1;
 
-      button {
-        padding: 0.75rem;
-        width: 4rem;
-        height: 4rem;
-        margin: 0 0.5rem 0 0.5rem;
-        border: none;
-        background: none;
-        border-radius: 100%;
-        transition: 150ms ease-in;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        .info_description_1 {
+          font-size: 24px;
+        }
 
-        &:hover {
-          background: $green;
-          transform: scale(1.05);
+        .info_description_2 {
+          font-size: 20px;
+        }
+
+        .button_wrapper {
+          display: flex;
+          justify-content: center;
+
+          button {
+            padding: 1rem;
+            width: 4rem;
+            height: 4rem;
+            margin: 0 0.5rem 0 0.5rem;
+            border: none;
+            background: none;
+            border-radius: 100%;
+            transition: 150ms ease-in;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+              background: $green;
+              animation: shake 300ms ease-in;
+
+              @keyframes shake {
+                0% {
+                  transform: rotate(0deg);
+                }
+
+                25% {
+                  transform: rotate(8deg);
+                }
+
+                50% {
+                  transform: rotate(0deg);
+                }
+
+                75% {
+                  transform: rotate(-8deg);
+                }
+
+                100% {
+                  transform: rotate(0deg);
+                }
+              }
+            }
+          }
         }
       }
     }

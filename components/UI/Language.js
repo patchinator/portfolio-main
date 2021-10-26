@@ -15,6 +15,7 @@ const Language = (props) => {
     if (color === "React") return "rgb(63,204,251)";
     if (color === "Vercel") return "black";
     if (color === "SCSS") return "rgb(199,100,148)";
+    if (color === "Mapbox API") return "rgb(66, 100, 251)";
     return "rgb(240, 240, 240)";
   };
 
@@ -32,6 +33,7 @@ const Language = (props) => {
     if (font === "React") return "black";
     if (font === "Vercel") return "white";
     if (font === "SCSS") return "white";
+    if (font === "Mapbox API") return "white";
   };
 
   return (
