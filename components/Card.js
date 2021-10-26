@@ -36,12 +36,14 @@ const Card = (props) => {
       </div>
       <div className={style.languages_wrapper}>
         <div className={style.languages}>
-          <Language name="HTML5" color="rgb(221,75,37)" />
-          <Language name="JSX" color="rgb(63,204,251)" />
-          <Language name="Next.js" color="white" />
-          <Language name="Chakra-UI" color="rgb(58,199,189)" />
-          <Language name="Firebase" color="rgb(255,203,45)" />
-          <Language name="Vercel" color="black" font="white" />
+          {props.languages.map((language) => (
+            <Language
+              key={Math.random() * 1000}
+              name={language}
+              color={language}
+              font={language}
+            />
+          ))}
         </div>
       </div>
     </Fragment>

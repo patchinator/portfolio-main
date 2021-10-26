@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import Header from "../components/Header";
 import Card from "../components/Card";
 import foodie_1 from "../images/foodie_1.png";
+import youboat_1 from "../images/youboat_1.png";
 
 export default function Home() {
   return (
@@ -16,17 +17,38 @@ export default function Home() {
       <Header />
       <Card
         title="Foodie"
-        paragraph_one="A blog-like application for anyone to talk/share their experiences with food."
-        paragraph_two="This was the second time using Chakra UI. It's brilliant documentation and usability makes creating reactive components simple and scalable.
-        This was the first proper project using the Next.js framework. I found it's routing and server side rendering features extremely useful."
+        paragraph_one="A blog-like application for anyone to talk/share their experiences
+         with food."
+        paragraph_two="This was the second time using Chakra UI. It's brilliant documentation
+         and usability makes creating reactive components simple and scalable.
+        This was the first proper project using the Next.js framework. I found it's routing
+         and server side rendering features extremely useful."
         image_one={foodie_1}
+        languages={[
+          "HTML5",
+          "JSX",
+          "Next.js",
+          "Chakra-UI",
+          "Firebase",
+          "Vercel",
+        ]}
       />
       <Card
         title="YouBoat"
-        paragraph_one="A blog-like application for anyone to talk/share their experiences with food."
-        paragraph_two="This was the second time using Chakra UI. It's brilliant documentation and usability makes creating reactive components simple and scalable.
-        This was the first proper project using the Next.js framework. I found it's routing and server side rendering features extremely useful."
-        image_one={foodie_1}
+        paragraph_one="An Airbnb clone for renting boats."
+        paragraph_two="First project my team and I worked on during our 9 week
+         Ruby bootcamp. It was fantastic to be able to experience working collaboratively,
+         from Figma to production."
+        image_one={youboat_1}
+        languages={[
+          "HTML5",
+          "CSS",
+          "Ruby",
+          "Ruby on Rails",
+          "Cloudinary",
+          "PostreSQL",
+          "Heroku",
+        ]}
       />
     </Fragment>
   );
