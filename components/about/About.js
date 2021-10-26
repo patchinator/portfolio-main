@@ -2,11 +2,22 @@ import Image from "next/image";
 import style from "./About.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 const About = (props) => {
+  const variants = {
+    visible: { opactity: 1 },
+    hidden: { opactity: 0 },
+  };
+
   return (
     <section className={style.container}>
-      <div className={style.about_wrapper}>
+      <motion.div
+        className={style.about_wrapper}
+        initial="hidden"
+        animate="visible"
+        variants={variants}
+      >
         <div className={style.title}>
           <h1>About</h1>
         </div>
@@ -31,7 +42,7 @@ const About = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
