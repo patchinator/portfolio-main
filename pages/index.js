@@ -1,10 +1,16 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import Header from "../components/Header";
-import Card from "../components/Card";
+
+// portfolio components
+import Header from "../components/header/Header";
+import Card from "../components/card/Card";
+import About from "../components/about/About";
+
+// images
 import foodie_1 from "../images/foodie_1.png";
 import youboat_1 from "../images/youboat_1.png";
 import spotter_1 from "../images/spotter_1_big.png";
+import curreny_1 from "../images/currency_1.png";
 
 export default function Home() {
   return (
@@ -15,6 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <About />
       <Card
         title="Foodie"
         paragraph_one="A blog-like application for anyone to talk/share their experiences
@@ -43,6 +50,7 @@ export default function Home() {
         languages={[
           "HTML5",
           "CSS",
+          "Javascript",
           "Ruby",
           "Ruby on Rails",
           "Cloudinary",
@@ -56,7 +64,7 @@ export default function Home() {
         paragraph_two="First project my team and I worked on during our 9 week
        Ruby bootcamp. It was fantastic to be able to experience working collaboratively,
        from Figma to production."
-        image_one={youboat_1}
+        image_one={curreny_1}
         languages={[
           "HTML5",
           "React",
@@ -75,10 +83,13 @@ export default function Home() {
         image_one={spotter_1}
         languages={[
           "HTML5",
-          "React",
-          "Chakra-UI",
-          "Currency Convert API",
-          "Vercel",
+          "SCSS",
+          "Javascript",
+          "Ruby",
+          "Ruby on Rails",
+          "Cloudinary",
+          "PostreSQL",
+          "Heroku",
         ]}
       />
     </Fragment>

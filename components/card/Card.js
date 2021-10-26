@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Image from "next/image";
 import style from "./Card.module.scss";
-import Language from "./UI/Language";
+import Language from "../UI/Language";
 import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

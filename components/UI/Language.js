@@ -31,7 +31,7 @@ const Language = (props) => {
     if (font === "Firebase") return "black";
     if (font === "React") return "black";
     if (font === "Vercel") return "white";
-    if (font === "SCSS") return "black";
+    if (font === "SCSS") return "white";
   };
 
   return (
