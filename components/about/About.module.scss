@@ -1,0 +1,66 @@
+$primary-color: rgb(116, 116, 116);
+$secondary-color: rgb(46, 46, 46);
+$green: rgb(177, 255, 60);
+
+.about_wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 4rem;
+      background: -webkit-linear-gradient($primary-color, $secondary-color);
+      background-size: 100%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+      text-align: center;
+    }
+  }
+
+  .contents {
+    display: flex;
+    justify-content: space-evenly;
+
+    .image {
+      overflow: hidden;
+      border-radius: 50%;
+    }
+
+    .info {
+      background: chocolate;
+
+      .info_name {
+        font-size: 2rem;
+      }
+
+      .info_description {
+        font-size: 20px;
+      }
+
+      button {
+        padding: 0.75rem;
+        width: 4rem;
+        height: 4rem;
+        margin: 0 0.5rem 0 0.5rem;
+        border: none;
+        background: none;
+        border-radius: 100%;
+        transition: 150ms ease-in;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background: $green;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}

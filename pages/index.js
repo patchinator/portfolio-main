@@ -7,6 +7,7 @@ import Card from "../components/card/Card";
 import About from "../components/about/About";
 
 // images
+import profile from "../images/profile.jpg";
 import foodie_1 from "../images/foodie_1.png";
 import youboat_1 from "../images/youboat_1.png";
 import spotter_1 from "../images/spotter_1_big.png";
@@ -21,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <About />
+      <About profile={profile} description={"My profile Pic"} />
       <Card
         title="Foodie"
         paragraph_one="A blog-like application for anyone to talk/share their experiences
