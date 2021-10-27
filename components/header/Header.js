@@ -1,4 +1,5 @@
 import style from "./Header.module.scss";
+import { Link } from "react-scroll";
 
 // icons
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -33,14 +34,20 @@ const Header = (props) => {
           {props.role}
         </motion.h2>
         <div>
-          <motion.button
+          <motion.div
             initial="titleHidden"
             animate="titleVisible"
             variants={titleVariants}
             transition={{ duration: 2.5 }}
           >
-            <FontAwesomeIcon icon={faArrowDown} />
-          </motion.button>
+            <Link to="about" smooth duration={1000}>
+              <FontAwesomeIcon
+                className={style.button}
+                width="3rem"
+                icon={faArrowDown}
+              />
+            </Link>
+          </motion.div>
         </div>
       </div>
     </section>

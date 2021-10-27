@@ -34,7 +34,7 @@ $blue: rgb(38, 194, 255);
       margin: 0px;
     }
 
-    button {
+    .button {
       background: none;
       padding: 0.5rem;
       border-radius: 100%;
@@ -46,6 +46,7 @@ $blue: rgb(38, 194, 255);
       transition: 150ms ease-in;
       width: 4rem;
       height: 4rem;
+      cursor: pointer;
 
       &:hover {
         color: $blue;

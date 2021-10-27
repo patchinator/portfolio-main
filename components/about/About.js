@@ -22,7 +22,7 @@ const About = (props) => {
   }, [controls, inView]);
 
   return (
-    <section className={style.container}>
+    <section className={style.container} id="about">
       <motion.div
         ref={ref}
         className={style.about_wrapper}
