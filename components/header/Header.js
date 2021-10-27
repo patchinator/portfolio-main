@@ -1,7 +1,10 @@
-import { Fragment } from "react";
 import style from "./Header.module.scss";
+
+// icons
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// animation
 import { motion } from "framer-motion";
 
 const Header = (props) => {
@@ -11,33 +14,36 @@ const Header = (props) => {
   };
 
   return (
-    <Fragment>
-      <section className={style.container}>
-        <div className={style.details}>
-          <motion.h1
+    <section className={style.container}>
+      <div className={style.details}>
+        <motion.h1
+          initial="titleHidden"
+          animate="titleVisible"
+          variants={titleVariants}
+          transition={{ duration: 1.5 }}
+        >
+          {props.name}
+        </motion.h1>
+        <motion.h2
+          initial="titleHidden"
+          animate="titleVisible"
+          variants={titleVariants}
+          transition={{ duration: 2 }}
+        >
+          {props.role}
+        </motion.h2>
+        <div>
+          <motion.button
             initial="titleHidden"
             animate="titleVisible"
             variants={titleVariants}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 2.5 }}
           >
-            {props.name}
-          </motion.h1>
-          <motion.h2
-            initial="titleHidden"
-            animate="titleVisible"
-            variants={titleVariants}
-            transition={{ duration: 2 }}
-          >
-            {props.role}
-          </motion.h2>
-          <div>
-            <button>
-              <FontAwesomeIcon icon={faArrowDown} />
-            </button>
-          </div>
+            <FontAwesomeIcon icon={faArrowDown} />
+          </motion.button>
         </div>
-      </section>
-    </Fragment>
+      </div>
+    </section>
   );
 };
 

@@ -1,10 +1,14 @@
 import { useEffect } from "react";
+
 import Image from "next/image";
 import style from "./About.module.scss";
+
+// fonts
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
-import { motion } from "framer-motion";
-import { useAnimation } from "framer-motion";
+
+// animation
+import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-hook-inview";
 
 const About = (props) => {

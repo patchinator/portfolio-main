@@ -5,6 +5,7 @@ import Language from "../UI/Language";
 import { faGitAlt } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion, useAnimation } from "framer-motion";
 
 const Card = (props) => {
   return (
