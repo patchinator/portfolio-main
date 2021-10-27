@@ -1,7 +1,7 @@
-$primary-color: rgb(116, 116, 116);
-$secondary-color: rgb(46, 46, 46);
+$primary-color: rgb(241, 241, 241);
+$secondary-color: rgb(225, 250, 255);
 
-$page: rgb(241, 241, 241);
+$page: rgb(78, 78, 78);
 $blue: rgb(38, 194, 255);
 
 .container {
@@ -35,6 +35,7 @@ $blue: rgb(38, 194, 255);
     }
 
     .button {
+      color: $primary-color;
       background: none;
       padding: 0.5rem;
       border-radius: 100%;

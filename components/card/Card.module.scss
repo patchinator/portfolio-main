@@ -1,10 +1,22 @@
-$primary-color: rgb(116, 116, 116);
-$secondary-color: rgb(46, 46, 46);
+$primary-color: rgb(241, 241, 241);
+$secondary-color: rgb(225, 250, 255);
+
+$page: rgb(78, 78, 78);
 $green: rgb(177, 255, 60);
 
-.card_container {
+.card {
   display: flex;
-  margin: 4rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  .container {
+    display: flex;
+    margin: 4rem;
+    background: $page;
+    color: $primary-color;
+    border-radius: 2rem;
+    width: 75%;
+  }
 
   .card_info {
     display: flex;
@@ -24,21 +36,39 @@ $green: rgb(177, 255, 60);
     }
 
     .card_text {
-      padding: 1rem;
+      padding: 0 1rem 0 1rem;
       font-size: 20px;
     }
   }
 
-  .card_image {
-    padding: 2rem;
-    width: 900px;
+  .image_wrapper {
+    position: relative;
+
+    .card_image_1 {
+      padding: calc(2rem + 4px) calc(2rem + 4px) 2rem calc(2rem + 4px);
+      width: 900px;
+      border-radius: 0 2rem 2rem 0;
+      position: relative;
+    }
+
+    .image_wrapper_2 {
+      position: absolute;
+      z-index: 2;
+      padding: calc(1rem + 4px) calc(1rem + 4px) 1rem calc(1rem + 4px);
+      border-radius: 1rem;
+      top: -4rem;
+      right: -4rem;
+      overflow: hidden;
+      background: $page;
+    }
   }
 }
 
 .languages_wrapper {
   display: flex;
   justify-content: center;
-  margin-top: -5rem;
+  margin-top: -7rem;
+  margin-bottom: 2rem;
 }
 
 .button_wrapper {

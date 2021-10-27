@@ -29,7 +29,7 @@ const Card = (props) => {
         ref={ref}
         initial="hidden"
         animate={controls}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 0.75 }}
         variants={{
           hidden: {
             opacity: 0,
@@ -38,33 +38,59 @@ const Card = (props) => {
             opacity: 1,
           },
         }}
-        className={style.card_container}
+        className={style.card}
       >
-        <div className={style.card_info}>
-          <h1 className={style.title}>{props.title}</h1>
-          <p className={style.card_text}>{props.paragraph_one}</p>
-          <p className={style.card_text}>{props.paragraph_two}</p>
-          <div className={style.button_wrapper}>
-            <button>
-              <FontAwesomeIcon icon={faGitAlt} />
-            </button>
-            <button>
-              <FontAwesomeIcon icon={faGlobe} />
-            </button>
+        <div className={style.container}>
+          <div className={style.card_info}>
+            <h1 className={style.title}>{props.title}</h1>
+            <p className={style.card_text}>{props.paragraph_one}</p>
+            <p className={style.card_text}>{props.paragraph_two}</p>
+            <div className={style.button_wrapper}>
+              <button>
+                <FontAwesomeIcon icon={faGitAlt} />
+              </button>
+              <button>
+                <FontAwesomeIcon icon={faGlobe} />
+              </button>
+            </div>
           </div>
-        </div>
-        <div>
-          <div className={style.card_image}>
-            <Image
-              src={props.image_one}
-              alt={props.image_one}
-              width="900"
-              height="506"
-            ></Image>
+          <div className={style.image_wrapper}>
+            <div className={style.card_image_1}>
+              <div className={style.card_image_2}>
+                <div className={style.image_wrapper_2}>
+                  <Image
+                    src={props.image_one}
+                    alt={props.image_one}
+                    width="450"
+                    height="258"
+                  />
+                </div>
+              </div>
+              <Image
+                src={props.image_two}
+                alt={props.image_two}
+                width="900"
+                height="506"
+              />
+            </div>
           </div>
         </div>
       </motion.div>
-      <div className={style.languages_wrapper}>
+      <motion.div
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        transition={{ duration: 0.75 }}
+        variants={{
+          hidden: {
+            opacity: 0,
+          },
+          visible: {
+            opacity: 1,
+          },
+        }}
+        className={style.languages_wrapper}
+      >
         <div className={style.languages}>
           {props.languages.map((language) => (
             <Language
@@ -75,7 +101,7 @@ const Card = (props) => {
             />
           ))}
         </div>
-      </div>
+      </motion.div>
     </Fragment>
   );
 };

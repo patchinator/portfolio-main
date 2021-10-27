@@ -22,7 +22,8 @@ const About = (props) => {
   }, [controls, inView]);
 
   return (
-    <section className={style.container} id="about">
+    <section className={style.container}>
+      <div className={style.about_link} id="about"></div>
       <motion.div
         ref={ref}
         className={style.about_wrapper}

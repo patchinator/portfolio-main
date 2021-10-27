@@ -9,6 +9,7 @@ import About from "../components/about/About";
 // images
 import profile from "../images/profile.jpg";
 import foodie_1 from "../images/foodie_1.png";
+import foodie_2 from "../images/foodie_2.png";
 import youboat_1 from "../images/youboat_1.png";
 import spotter_1 from "../images/spotter_1_big.png";
 import curreny_1 from "../images/currency_1.png";
@@ -40,6 +41,7 @@ export default function Home() {
         This was the first proper project using the Next.js framework. I found it's routing
          and server side rendering features extremely useful."
         image_one={foodie_1}
+        image_two={foodie_2}
         languages={[
           "HTML5",
           "Javascript",
@@ -56,6 +58,7 @@ export default function Home() {
          Ruby bootcamp. It was fantastic to be able to experience working collaboratively,
          from Figma to production."
         image_one={youboat_1}
+        image_two={foodie_2}
         languages={[
           "HTML5",
           "CSS",
@@ -74,6 +77,7 @@ export default function Home() {
        Ruby bootcamp. It was fantastic to be able to experience working collaboratively,
        from Figma to production."
         image_one={curreny_1}
+        image_two={foodie_2}
         languages={[
           "HTML5",
           "React",
@@ -90,6 +94,7 @@ export default function Home() {
         they'd found, 'drop in' to spots they were at, alongside live feeds for which users
         were where."
         image_one={spotter_1}
+        image_two={foodie_2}
         languages={[
           "HTML5",
           "SCSS",

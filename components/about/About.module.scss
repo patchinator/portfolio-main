@@ -5,7 +5,13 @@ $blue: rgb(38, 194, 255);
 .container {
   display: flex;
   justify-content: center;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
+  position: relative;
+
+  .about_link {
+    position: absolute;
+    top: -12rem;
+  }
 
   .about_wrapper {
     display: flex;
