@@ -16,6 +16,7 @@ $green: rgb(177, 255, 60);
     color: $primary-color;
     border-radius: 2rem;
     width: 75%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   }
 
   .card_info {
@@ -43,11 +44,11 @@ $green: rgb(177, 255, 60);
 
   .image_wrapper {
     position: relative;
+    flex: 1;
 
     .card_image_1 {
-      padding: calc(2rem + 4px) calc(2rem + 4px) 2rem calc(2rem + 4px);
+      padding: calc(2rem + 4px) calc(2rem + 4px) 2rem calc(1rem + 4px);
       width: 900px;
-      border-radius: 0 2rem 2rem 0;
       position: relative;
     }
 
@@ -60,6 +61,7 @@ $green: rgb(177, 255, 60);
       right: -4rem;
       overflow: hidden;
       background: $page;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
   }
 }

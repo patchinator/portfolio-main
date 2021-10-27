@@ -59,16 +59,16 @@ const Card = (props) => {
               <div className={style.card_image_2}>
                 <div className={style.image_wrapper_2}>
                   <Image
-                    src={props.image_one}
-                    alt={props.image_one}
+                    src={props.image_two}
+                    alt={props.image_two}
                     width="450"
                     height="258"
                   />
                 </div>
               </div>
               <Image
-                src={props.image_two}
-                alt={props.image_two}
+                src={props.image_one}
+                alt={props.image_one}
                 width="900"
                 height="506"
               />

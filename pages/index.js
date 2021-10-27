@@ -11,6 +11,7 @@ import profile from "../images/profile.jpg";
 import foodie_1 from "../images/foodie_1.png";
 import foodie_2 from "../images/foodie_2.png";
 import youboat_1 from "../images/youboat_1.png";
+import youboat_2 from "../images/youboat_2.png";
 import spotter_1 from "../images/spotter_1_big.png";
 import curreny_1 from "../images/currency_1.png";
 
@@ -58,7 +59,7 @@ export default function Home() {
          Ruby bootcamp. It was fantastic to be able to experience working collaboratively,
          from Figma to production."
         image_one={youboat_1}
-        image_two={foodie_2}
+        image_two={youboat_2}
         languages={[
           "HTML5",
           "CSS",
