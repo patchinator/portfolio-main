@@ -119,7 +119,12 @@ export default function Home() {
         github="https://github.com/tmoore95/Spotter"
         live_project="https://www.spotter.cc/"
       />
-      <Footer />
+      <Footer
+        contact_message="Get in contact:"
+        email_address="patrickhoveman@gmail.com"
+        linkedIn="https://www.linkedin.com/in/patrickhoveman/"
+        github="https://github.com/patchinator"
+      />
     </Fragment>
   );
 }

@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import { faGithubAlt, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <section className={style.container}>
       <div className={style.footer_offset}></div>
@@ -23,40 +23,30 @@ const Footer = () => {
               icon={faArrowUp}
             />
           </Link>
-          <p className={logo.logo_card_small}>Get in contact</p>
+          <p className={logo.logo_card_small}>{props.contact_message}</p>
           <div>
             <button className={button.icon_button}>
               <a
-                href="mailto:patrickhoveman@gmail.com"
+                href={`mailto:${props.email_address}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon width="2rem" height="2rem" icon={faEnvelope} />
               </a>
             </button>
-            <button className={button.icon_button}>
-              <a
-                href="mailto:patrickhoveman@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  width="2rem"
-                  height="2rem"
-                  icon={faGithubAlt}
-                />
-              </a>
-            </button>
-            <button className={button.icon_button}>
-              <a
-                href="mailto:patrickhoveman@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon width="2rem" height="2rem" icon={faLinkedin} />
-              </a>
-            </button>
           </div>
+        </div>
+        <div className={style.details}>
+          <button className={button.icon_button}>
+            <a href={props.github} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon width="2rem" height="2rem" icon={faGithubAlt} />
+            </a>
+          </button>
+          <button className={button.icon_button}>
+            <a href={props.linkedIn} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon width="2rem" height="2rem" icon={faLinkedin} />
+            </a>
+          </button>
         </div>
       </div>
     </section>

@@ -97,7 +97,7 @@ const Card = (props) => {
                     <Image
                       src={props.image_two_mobile}
                       alt={props.image_two_mobile}
-                      width="200"
+                      width="180"
                       height="300"
                     />
                   </div>
