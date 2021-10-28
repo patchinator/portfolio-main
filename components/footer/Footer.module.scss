@@ -32,28 +32,37 @@
     overflow: hidden;
   }
 
-  .footer {
+  .arrow_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
     flex-direction: column;
+
+    .footer_info {
+      color: $secondary-color;
+      font-weight: 100;
+      margin: unset;
+      margin-bottom: 0.25rem;
+    }
 
     .footer_wrapper {
       display: flex;
+      justify-content: center;
       align-items: center;
       flex-direction: column;
-
-      button {
-        background: none;
-        border: none;
-      }
+      margin-left: 0.5rem;
     }
 
     .details {
       border-top: 1px solid $page2;
-      width: 80%;
+      width: 50%;
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
     }
   }
 }

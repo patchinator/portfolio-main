@@ -16,7 +16,6 @@ import youboat_2 from "../images/youboat_2.png";
 import spotter_1 from "../images/spotter_1_big.png";
 import spotter_2 from "../images/spotter_1.png";
 import curreny_1 from "../images/currency_1.png";
-import curreny_2 from "../images/currency_2.png";
 
 export default function Home() {
   return (
@@ -123,6 +122,8 @@ export default function Home() {
         email_address="patrickhoveman@gmail.com"
         linkedIn="https://www.linkedin.com/in/patrickhoveman/"
         github="https://github.com/patchinator"
+        cv="https://drive.google.com/file/d/1uL4_ommjtW9jQ8RDxYti9pU4auTmHhMk/view?usp=sharing"
+        info="Feel free to check out my linkedIn, Github and CV:"
       />
     </Fragment>
   );

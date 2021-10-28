@@ -51,17 +51,6 @@ const About = (props) => {
           <div className={style.info}>
             <p className={style.info_description_1}>{props.description_1}</p>
             <p className={style.info_description_2}>{props.description_2}</p>
-            <div className={style.button_wrapper}>
-              <button className={button.cv_button}>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://drive.google.com/file/d/1uL4_ommjtW9jQ8RDxYti9pU4auTmHhMk/view?usp=sharing"
-                >
-                  <FontAwesomeIcon icon={faBook} width="2rem" />
-                </a>
-              </button>
-            </div>
           </div>
         </div>
         <div className={style.arrow_button_wrapper}>
