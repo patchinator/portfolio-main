@@ -51,6 +51,8 @@ export default function Home() {
           "Firebase",
           "Vercel",
         ]}
+        github="https://github.com/patchinator/foodie_2"
+        live_project="https://foodie-2.vercel.app/"
       />
       <Card
         title="YouBoat"
@@ -70,6 +72,8 @@ export default function Home() {
           "PostreSQL",
           "Heroku",
         ]}
+        github="https://github.com/tmoore95/youboat"
+        live_project="https://youboat.herokuapp.com/"
       />
       <Card
         title="Currency Converter"
@@ -86,6 +90,8 @@ export default function Home() {
           "Currency Convert API",
           "Vercel",
         ]}
+        github="https://github.com/patchinator/currency-converter"
+        live_project="https://currency-converter-git-master-patchinator.vercel.app/"
       />
       <Card
         title="Spotter"
@@ -107,6 +113,8 @@ export default function Home() {
           "PostreSQL",
           "Heroku",
         ]}
+        github="https://github.com/tmoore95/Spotter"
+        live_project="https://www.spotter.cc/"
       />
     </Fragment>
   );

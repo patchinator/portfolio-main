@@ -47,10 +47,22 @@ const Card = (props) => {
             <p className={style.card_text}>{props.paragraph_two}</p>
             <div className={style.button_wrapper}>
               <button>
-                <FontAwesomeIcon icon={faGitAlt} />
+                <a
+                  href={props.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGitAlt} />
+                </a>
               </button>
               <button>
-                <FontAwesomeIcon icon={faGlobe} />
+                <a
+                  href={props.live_project}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGlobe} />
+                </a>
               </button>
             </div>
           </div>

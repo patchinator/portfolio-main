@@ -35,6 +35,7 @@ const Language = (props) => {
     if (font === "Vercel") return "white";
     if (font === "SCSS") return "white";
     if (font === "Mapbox API") return "white";
+    return "black";
   };
 
   return (
