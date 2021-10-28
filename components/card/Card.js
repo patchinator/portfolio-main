@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import Language from "../UI/Language";
 
+// styles
 import style from "./Card.module.scss";
 import button from "../../styles/UI/buttons.module.scss";
 import logo from "../../styles/UI/logo.module.scss";

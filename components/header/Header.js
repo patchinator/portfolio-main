@@ -1,6 +1,8 @@
+import { Link } from "react-scroll";
+
+// styles
 import style from "./Header.module.scss";
 import button from "../../styles/UI/buttons.module.scss";
-import { Link } from "react-scroll";
 
 // icons
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
