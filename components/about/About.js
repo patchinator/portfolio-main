@@ -2,8 +2,10 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { Link } from "react-scroll";
 
+// styles
 import style from "./About.module.scss";
 import button from "../../styles/UI/buttons.module.scss";
+import logo from "../../styles/UI/logo.module.scss";
 
 // fonts
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -37,7 +39,7 @@ const About = (props) => {
         }}
         transition={{ duration: 1.2 }}
       >
-        <div className={style.title}>
+        <div className={logo.logo_card_black}>
           <h1>About</h1>
         </div>
         <div className={style.contents}>

@@ -1,7 +1,5 @@
-$primary-color: rgb(241, 241, 241);
-$secondary-color: rgb(225, 250, 255);
-$page: rgb(78, 78, 78);
-$blue: rgb(38, 194, 255);
+@import "../../styles/colors/colors.scss";
+@import "../../styles/sizes/media.scss";
 
 .arrow_button {
   background: none;
@@ -98,5 +96,10 @@ $blue: rgb(38, 194, 255);
   &:hover {
     color: $blue;
     transform: scale(1.2);
+  }
+
+  @media only screen and (max-width: $small_desktop) {
+    width: 3.5rem;
+    height: 3.5rem;
   }
 }
