@@ -13,7 +13,9 @@ import foodie_2 from "../images/foodie_2.png";
 import youboat_1 from "../images/youboat_1.png";
 import youboat_2 from "../images/youboat_2.png";
 import spotter_1 from "../images/spotter_1_big.png";
+import spotter_2 from "../images/spotter_1.png";
 import curreny_1 from "../images/currency_1.png";
+import curreny_2 from "../images/currency_2.png";
 
 export default function Home() {
   return (
@@ -82,7 +84,7 @@ export default function Home() {
        Ruby bootcamp. It was fantastic to be able to experience working collaboratively,
        from Figma to production."
         image_one={curreny_1}
-        image_two={foodie_2}
+        image_two_small={curreny_2}
         languages={[
           "HTML5",
           "React",
@@ -101,7 +103,7 @@ export default function Home() {
         they'd found, 'drop in' to spots they were at, alongside live feeds for which users
         were where."
         image_one={spotter_1}
-        image_two={foodie_2}
+        image_two_mobile={spotter_2}
         languages={[
           "HTML5",
           "SCSS",
