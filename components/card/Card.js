@@ -2,6 +2,7 @@ import { Fragment, useEffect } from "react";
 
 import Image from "next/image";
 import style from "./Card.module.scss";
+import button from "../../styles/UI/buttons.module.scss";
 import Language from "../UI/Language";
 
 // icons
@@ -46,7 +47,7 @@ const Card = (props) => {
             <p className={style.card_text}>{props.paragraph_one}</p>
             <p className={style.card_text}>{props.paragraph_two}</p>
             <div className={style.button_wrapper}>
-              <button>
+              <button className={button.icon_button}>
                 <a
                   href={props.github}
                   target="_blank"
@@ -55,7 +56,7 @@ const Card = (props) => {
                   <FontAwesomeIcon icon={faGitAlt} />
                 </a>
               </button>
-              <button>
+              <button className={button.icon_button}>
                 <a
                   href={props.live_project}
                   target="_blank"

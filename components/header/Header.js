@@ -1,4 +1,5 @@
 import style from "./Header.module.scss";
+import button from "../../styles/UI/buttons.module.scss";
 import { Link } from "react-scroll";
 
 // icons
@@ -15,7 +16,7 @@ const Header = (props) => {
   };
 
   return (
-    <section className={style.container}>
+    <section className={style.container} id="header">
       <div className={style.details}>
         <motion.h1
           initial="titleHidden"
@@ -42,7 +43,7 @@ const Header = (props) => {
           >
             <Link to="about" smooth duration={1000}>
               <FontAwesomeIcon
-                className={style.button}
+                className={button.arrow_button_white}
                 width="3rem"
                 icon={faArrowDown}
               />

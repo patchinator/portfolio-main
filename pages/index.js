@@ -5,6 +5,7 @@ import { Fragment } from "react";
 import Header from "../components/header/Header";
 import Card from "../components/card/Card";
 import About from "../components/about/About";
+import Footer from "../components/footer/Footer";
 
 // images
 import profile from "../images/profile.jpg";
@@ -118,6 +119,7 @@ export default function Home() {
         github="https://github.com/tmoore95/Spotter"
         live_project="https://www.spotter.cc/"
       />
+      <Footer />
     </Fragment>
   );
 }

@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-
 import Image from "next/image";
-import style from "./About.module.scss";
 import { Link } from "react-scroll";
+
+import style from "./About.module.scss";
+import button from "../../styles/UI/buttons.module.scss";
 
 // fonts
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -54,7 +55,7 @@ const About = (props) => {
             <p className={style.info_description_1}>{props.description_1}</p>
             <p className={style.info_description_2}>{props.description_2}</p>
             <div className={style.button_wrapper}>
-              <button>
+              <button className={button.cv_button}>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -65,7 +66,7 @@ const About = (props) => {
               </button>
               <Link to="projects" smooth duration={1000}>
                 <FontAwesomeIcon
-                  className={style.button}
+                  className={button.arrow_button}
                   width="3rem"
                   icon={faArrowDown}
                 />
