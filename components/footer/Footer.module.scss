@@ -1,9 +1,4 @@
-$primary-color: rgb(241, 241, 241);
-$secondary-color: rgb(225, 250, 255);
-
-$page: rgb(78, 78, 78);
-$page2: rgb(104, 104, 104);
-$blue: rgb(38, 194, 255);
+@import "../../styles/colors/colors.scss";
 
 .container {
   background: $page;

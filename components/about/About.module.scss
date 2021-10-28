@@ -1,6 +1,4 @@
-$primary-color: rgb(116, 116, 116);
-$secondary-color: rgb(46, 46, 46);
-$blue: rgb(38, 194, 255);
+@import "../../styles/colors/colors.scss";
 
 .container {
   display: flex;

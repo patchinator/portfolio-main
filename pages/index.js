@@ -85,7 +85,6 @@ export default function Home() {
        Ruby bootcamp. It was fantastic to be able to experience working collaboratively,
        from Figma to production."
         image_one={curreny_1}
-        image_two_small={curreny_2}
         languages={[
           "HTML5",
           "React",
