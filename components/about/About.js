@@ -26,8 +26,8 @@ const About = (props) => {
   }, [controls, inView]);
 
   return (
-    <section className={style.container}>
-      <div className={style.about_link} id="about"></div>
+    <section className={style.container} id="about">
+      <div className={style.about_link}></div>
       <motion.div
         ref={ref}
         className={style.about_wrapper}
@@ -45,12 +45,7 @@ const About = (props) => {
         <div className={style.contents}>
           <div className={style.image}>
             <div>
-              <Image
-                src={props.profile}
-                alt={props.image_description}
-                width="400px"
-                height="400px"
-              />
+              <Image src={props.profile} alt={props.image_description} />
             </div>
           </div>
           <div className={style.info}>
@@ -66,15 +61,17 @@ const About = (props) => {
                   <FontAwesomeIcon icon={faBook} width="2rem" />
                 </a>
               </button>
-              <Link to="projects" smooth duration={1000}>
-                <FontAwesomeIcon
-                  className={button.arrow_button}
-                  width="3rem"
-                  icon={faArrowDown}
-                />
-              </Link>
             </div>
           </div>
+        </div>
+        <div className={style.arrow_button_wrapper}>
+          <Link to="projects" smooth duration={1000}>
+            <FontAwesomeIcon
+              className={button.arrow_button}
+              width="3rem"
+              icon={faArrowDown}
+            />
+          </Link>
         </div>
       </motion.div>
       <div className={style.portfolio_link} id="projects"></div>

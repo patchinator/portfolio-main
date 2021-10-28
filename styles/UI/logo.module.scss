@@ -46,4 +46,12 @@
   -moz-text-fill-color: transparent;
   text-align: center;
   margin: 0;
+
+  @media only screen and (max-width: $small_desktop) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: $iphone_mobile) {
+    font-size: 1.5rem;
+  }
 }

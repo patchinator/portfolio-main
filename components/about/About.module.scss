@@ -1,4 +1,5 @@
 @import "../../styles/colors/colors.scss";
+@import "../../styles/sizes/media.scss";
 
 .container {
   display: flex;
@@ -16,31 +17,56 @@
     flex-direction: column;
     width: 50%;
 
+    @media only screen and (max-width: $small_desktop) {
+      width: 75%;
+    }
+
+    @media only screen and (max-width: $portrait_mobile) {
+      width: 95%;
+    }
+
     .title {
       display: flex;
       align-items: center;
       justify-content: center;
-
-      h1 {
-        font-size: 4rem;
-        background: -webkit-linear-gradient($primary-color, $secondary-color);
-        background-size: 100%;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-        text-align: center;
-      }
     }
 
     .contents {
       display: flex;
       justify-content: space-evenly;
 
+      @media only screen and (max-width: $iphone_mobile) {
+        flex-direction: column;
+        align-items: center;
+      }
+
       .image {
         overflow: hidden;
         border-radius: 50%;
-        margin: 2rem;
+        margin: 1rem;
+        width: 400px;
+        height: 400px;
+
+        @media only screen and (max-width: 1500px) {
+          width: 300px;
+          height: 300px;
+        }
+
+        @media only screen and (max-width: $small_desktop) {
+          width: 300px;
+          width: 300px;
+        }
+
+        @media only screen and (max-width: $laptops) {
+          width: 200px;
+          height: 200px;
+        }
+
+        @media only screen and (max-width: $iphone_mobile) {
+          width: 160px;
+          height: 160px;
+          margin: unset;
+        }
       }
 
       .info {
@@ -48,10 +74,34 @@
 
         .info_description_1 {
           font-size: 24px;
+
+          @media only screen and (max-width: $laptops) {
+            font-size: 20px;
+          }
+
+          @media only screen and (max-width: $portrait_mobile) {
+            font-size: 18px;
+          }
+
+          @media only screen and (max-width: $iphone_mobile) {
+            font-size: 20px;
+          }
         }
 
         .info_description_2 {
           font-size: 20px;
+
+          @media only screen and (max-width: $laptops) {
+            font-size: 16px;
+          }
+
+          @media only screen and (max-width: $portrait_mobile) {
+            font-size: 14px;
+          }
+
+          @media only screen and (max-width: $iphone_mobile) {
+            font-size: 16px;
+          }
         }
 
         .button_wrapper {
@@ -66,5 +116,10 @@
     position: absolute;
     font-size: 2rem;
     bottom: 12rem;
+  }
+
+  .arrow_button_wrapper {
+    display: flex;
+    justify-content: center;
   }
 }
