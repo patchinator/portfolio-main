@@ -2,10 +2,40 @@ $primary-color: rgb(241, 241, 241);
 $secondary-color: rgb(225, 250, 255);
 
 $page: rgb(78, 78, 78);
+$page2: rgb(104, 104, 104);
 $blue: rgb(38, 194, 255);
 
 .container {
   background: $page;
+  margin-top: 6rem;
+  padding-bottom: 2rem;
+  position: relative;
+
+  .footer_offset {
+    background: $page2;
+    height: 4rem;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transform: rotateZ(-3deg) rotateX(5deg);
+    margin-left: 3rem;
+    overflow: hidden;
+  }
+
+  .footer_offset_2 {
+    background: $page2;
+    height: 4rem;
+    width: 110%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    transform: rotateZ(3deg) rotateX(5deg);
+    padding-right: 3rem;
+    overflow: hidden;
+  }
 
   .footer {
     display: flex;

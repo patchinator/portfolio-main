@@ -12,6 +12,8 @@ import { faGithubAlt, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
   return (
     <section className={style.container}>
+      <div className={style.footer_offset}></div>
+      <div className={style.footer_offset_2}></div>
       <div className={style.footer}>
         <div className={style.footer_wrapper}>
           <Link to="header" smooth duration={1000}>
@@ -21,7 +23,7 @@ const Footer = () => {
               icon={faArrowUp}
             />
           </Link>
-          <p>Get in contact</p>
+          <p className={logo.logo_card_small}>Get in contact</p>
           <div>
             <button className={button.icon_button}>
               <a

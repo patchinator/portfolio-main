@@ -1,8 +1,8 @@
 $primary-color: rgb(241, 241, 241);
 $secondary-color: rgb(225, 250, 255);
 
-.logo_card {
-  font-size: 4rem;
+.logo_card_small {
+  font-size: 2rem;
   background: -webkit-linear-gradient($primary-color, $secondary-color);
   background-size: 100%;
   background-clip: text;
@@ -10,4 +10,17 @@ $secondary-color: rgb(225, 250, 255);
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   text-align: center;
+  margin: 0;
+}
+
+.logo_card {
+  font-size: 3rem;
+  background: -webkit-linear-gradient($primary-color, $secondary-color);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+  margin: 0;
 }

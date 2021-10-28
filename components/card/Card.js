@@ -1,9 +1,11 @@
 import { Fragment, useEffect } from "react";
-
 import Image from "next/image";
+
+import Language from "../UI/Language";
+
 import style from "./Card.module.scss";
 import button from "../../styles/UI/buttons.module.scss";
-import Language from "../UI/Language";
+import logo from "../../styles/UI/logo.module.scss";
 
 // icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -43,7 +45,7 @@ const Card = (props) => {
       >
         <div className={style.container}>
           <div className={style.card_info}>
-            <h1 className={style.title}>{props.title}</h1>
+            <h1 className={logo.logo_card}>{props.title}</h1>
             <p className={style.card_text}>{props.paragraph_one}</p>
             <p className={style.card_text}>{props.paragraph_two}</p>
             <div className={style.button_wrapper}>
