@@ -1,4 +1,5 @@
 import style from "./Language.module.scss";
+import { motion } from "framer-motion";
 
 const Language = (props) => {
   const colorHandler = (color) => {
@@ -37,7 +38,11 @@ const Language = (props) => {
   };
 
   return (
-    <div
+    <motion.div
+      whileHover={{
+        scale: [1.02, 1.03, 1.05, 1.07, 1.05],
+        transition: { duration: 0.2 },
+      }}
       className={style.language}
       style={{
         background: colorHandler(props.color),
@@ -45,7 +50,7 @@ const Language = (props) => {
       }}
     >
       {props.name}
-    </div>
+    </motion.div>
   );
 };
 

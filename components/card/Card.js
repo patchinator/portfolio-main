@@ -91,7 +91,7 @@ const Card = (props) => {
         }}
         className={style.languages_wrapper}
       >
-        <div className={style.languages}>
+        <motion.div className={style.languages}>
           {props.languages.map((language) => (
             <Language
               key={Math.random() * 1000}
@@ -100,7 +100,7 @@ const Card = (props) => {
               font={language}
             />
           ))}
-        </div>
+        </motion.div>
       </motion.div>
     </Fragment>
   );
