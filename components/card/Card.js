@@ -30,6 +30,7 @@ const Card = (props) => {
   return (
     <Fragment>
       <motion.div
+        id="card"
         ref={ref}
         initial="hidden"
         animate={controls}

@@ -54,7 +54,7 @@ const About = (props) => {
           </div>
         </div>
         <div className={style.arrow_button_wrapper}>
-          <Link to="projects" smooth duration={1000}>
+          <Link to="card" smooth duration={1000}>
             <FontAwesomeIcon
               className={button.arrow_button}
               width="3rem"
