@@ -74,12 +74,7 @@ const Card = (props) => {
               <div className={style.card_image_2}>
                 {props.image_two && (
                   <div className={style.image_wrapper_2}>
-                    <Image
-                      src={props.image_two}
-                      alt={props.image_two}
-                      width="450"
-                      height="258"
-                    />
+                    <Image src={props.image_two} alt={props.image_two} />
                   </div>
                 )}
                 {props.image_two_small && (
@@ -93,7 +88,7 @@ const Card = (props) => {
                   </div>
                 )}
                 {props.image_two_mobile && (
-                  <div className={style.image_wrapper_2}>
+                  <div className={style.image_wrapper_2_mobile}>
                     <Image
                       src={props.image_two_mobile}
                       alt={props.image_two_mobile}
