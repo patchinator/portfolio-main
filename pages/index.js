@@ -80,9 +80,10 @@ export default function Home() {
       <Card
         title="Currency Converter"
         paragraph_one="A simple currency converter built using React Native."
-        paragraph_two="First project my team and I worked on during our 9 week
-       Ruby bootcamp. It was fantastic to be able to experience working collaboratively,
-       from Figma to production."
+        paragraph_two="The idea for this small project was to familiarise myself with Chakra.
+         The UI as a whole is insanely easy to use (particularly thanks to extensive
+           documentation). The project was also intended to further familiarise myself with
+            the React Framework; a framework I very much now admire."
         image_one={curreny_1}
         languages={[
           "HTML5",
