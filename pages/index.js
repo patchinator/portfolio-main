@@ -16,6 +16,8 @@ import youboat_2 from "../images/youboat_2.png";
 import spotter_1 from "../images/spotter_1_big.png";
 import spotter_2 from "../images/spotter_1.png";
 import curreny_1 from "../images/currency_1.png";
+import recipe_library_1 from "../images/recipe_library_1.png";
+import recipe_library_2 from "../images/recipe_library_2.png";
 
 export default function Home() {
   return (
@@ -55,6 +57,25 @@ export default function Home() {
         ]}
         github="https://github.com/patchinator/foodie_2"
         live_project="https://foodie-2.vercel.app/"
+      />
+      <Card
+        title="Recipe Library"
+        paragraph_one="A Recipe Library where you can create and show your own recipes."
+        paragraph_two="This idea was one of my first project ideas, but was scrapped
+        during development due to a lack of knowledge. Returning back to it with a deeper
+        understanding of Next.js has been fulfilling to finally finish."
+        image_one={recipe_library_1}
+        image_two={recipe_library_2}
+        languages={[
+          "HTML5",
+          "SCSS",
+          "Javascript",
+          "Next.js",
+          "Firebase",
+          "Vercel",
+        ]}
+        github="https://github.com/patchinator/food-test-app"
+        live_project="https://recipe-library.vercel.app/"
       />
       <Card
         title="YouBoat"
